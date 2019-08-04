@@ -1,18 +1,23 @@
+---
 - name: Install apt packages
   apt: name={{item}}
   with_items:
     - htop
-    - gdebi
+    # - gdebi
     - tree
-    - ubuntu-wallpapers*
-    - mint-backgrounds-*
-    - shutter
+    # - ubuntu-wallpapers*
+    # - mint-backgrounds-*
+    # - shutter
     - jq
+    - python-pip
+    - python3-pip
+    - chromium-browser
+    - deepin-terminal    
 
 - name: Install deb packages
   apt: deb={{item}}
   with_items:
-    - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    # - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     - https://zoom.us/client/latest/zoom_amd64.deb
 
 - name: Remove useless packages from the cache

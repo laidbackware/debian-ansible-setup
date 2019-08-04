@@ -6,11 +6,11 @@
   apt:
     name: xclip
 
-- name: Setup Tmux
-  become_user: "{{user}}"
-  copy:
-    src: tasks/apps/tmux/.tmux.conf
-    dest: /home/{{user}}/
+# - name: Setup Tmux
+#   become_user: "{{user}}"
+#   copy:
+#     src: tasks/apps/tmux/.tmux.conf
+#     dest: /home/{{user}}/
     
 - name: Creates directory
   become_user: "{{user}}"
