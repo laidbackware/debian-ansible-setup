@@ -1,5 +1,5 @@
-# mint-blade-laptop-setup
-Ansible Playbook for setup of Zorin Core on ### laptop (Post Zorin Install)
+# ubuntu-ansible-setup
+Ansible Playbook for setup of Ubuntu 19.04 on ### laptop (Post Install)
 
 1. Install Git
 ```
