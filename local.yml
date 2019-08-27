@@ -13,34 +13,27 @@
 
     - include: tasks/git/setup.yml
     - include: tasks/misc/apt-packages.yml
+    - include: tasks/desktop/gnome-extensions/gnome-extensions.yml
+      with_items:
+      - "{{gnome_extensions}}"
+      
     - include: tasks/dev/node/install.yml
     - include: tasks/dev/python/install-pip.yml
     - include: tasks/dev/python/pip-modules.yml
     - include: tasks/apps/vscode/install.yml
     - include: tasks/apps/vim/install.yml
     - include: tasks/apps/tmux/install.yml
-    - include: tasks/apps/remmina/install.yml
+    - include: tasks/apps/remmina/install.yml ## Comes with 19.04 onwards
     - include: tasks/apps/virtualbox/install.yml
 
+    - include: tasks/pcfs/install-bosh-cli-depandancies.yml
     - include: tasks/pcfs/install-github-release.yml
-      vars:
-        repository: "{{om_cli.repository}}"
-        install_location: "{{om_cli.install_location}}"
-
-    - include: tasks/pcfs/install-github-release.yml
-      vars:
-        repository: "{{pivnet_cli.repository}}"
-        install_location: "{{pivnet_cli.install_location}}"
-
-    - include: tasks/pcfs/install-github-release.yml
-      vars:
-        repository: "{{bbl_cli.repository}}"
-        install_location: "{{bbl_cli.install_location}}"
+      with_items:
+      - "{{cf_github_releases}}"
 
     - include: tasks/pcfs/install-cf-cli.yml
     - include: tasks/pcfs/install-terraform-cli.yml
     - include: tasks/pcfs/install-packer-cli.yml
-    - include: tasks/pcfs/install-bosh-cli.yml
     - include: tasks/pcfs/install-aws-cli.yml
 
 # TBC
@@ -48,3 +41,4 @@
     # - include: tasks/system/power-management.yml
     # - include: tasks/desktop/setup.yml
     # - include: tasks/desktop/plank.yml
+    

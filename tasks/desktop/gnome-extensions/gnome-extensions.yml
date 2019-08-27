@@ -1,0 +1,38 @@
+---
+- name: Clean artifact path
+  file:
+    state: absent
+    path: "/tmp/{{item.name}}/"
+
+- name: Download Repos from Git
+  become_user: "{{user}}"
+  git:
+    repo: "{{item.git_link}}"
+    dest: /tmp/{{item.name}}
+    update: yes
+
+- name: Run 'uninstall' target
+  become_user: "{{user}}"
+  make:
+    chdir: /tmp/{{item.name}}
+    target: uninstall
+  ignore_errors: yes
+
+- name: Run 'install' target
+  become_user: "{{user}}"
+  make:
+    chdir: /tmp/{{item.name}}
+    target: install
+
+- name: Copy settings over
+  become_user: "{{user}}"
+  copy:
+    src: "tasks/desktop/gnome-extensions/{{item.name}}-stylesheet.css"
+    dest: "{{item.settings_location}}"
+    
+    mode: 0664
+
+- name: Clean artifact path
+  file:
+    state: absent
+    path: "/tmp/{{item.name}}/"

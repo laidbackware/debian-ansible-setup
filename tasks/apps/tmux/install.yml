@@ -24,6 +24,6 @@
     repo: https://github.com/tmux-plugins/tpm
     dest: /home/{{user}}/.tmux/plugins/tpm
 
-- name: Reload Tmux 
-  become_user: "{{user}}"
-  command: tmux source /home/{{user}}/.tmux.conf
+# - name: Reload Tmux 
+#   become_user: "{{user}}"
+#   command: tmux source /home/{{user}}/.tmux.conf

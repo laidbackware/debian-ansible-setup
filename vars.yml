@@ -1,21 +1,25 @@
 ---
-user: siobrien
-ubuntu_codename: bionic
-om_cli:
-  repository: pivotal-cf/om
+user: matt
+ubuntu_codename: disco
+cf_github_releases:
+- repository: cloudfoundry/bosh-cli
   install_location: /usr/local/bin/om
-pivnet_cli:
-  repository: pivotal-cf/pivnet-cli
-  install_location: /usr/local/bin/pivnet
-bosh_cli:
-  repository: cloudfoundry/bosh-cli
+- repository: pivotal-cf/om
   install_location: /usr/local/bin/bosh
+- repository: pivotal-cf/pivnet-cli
+  install_location: /usr/local/bin/pivnet
+- repository: cloudfoundry/bosh-bootloader
+  install_location: /usr/local/bin/bbl
 cf_cli:
   install_location: /usr/local/bin
-bbl_cli:
-  repository: cloudfoundry/bosh-bootloader
-  install_location: /usr/local/bin/bbl
 terraform_cli:
   install_location: /usr/local/bin
 packer_cli:
   install_location: /usr/local/bin
+gnome_extensions:
+- name: arc-menu
+  settings_location: "/home/{{user}}/.local/share/gnome-shell/extensions/arc-menu@linxgem33.com/stylesheet.css"
+  git_link: https://gitlab.com/LinxGem33/Arc-Menu.git 
+- name: dash-to-panel
+  settings_location: "/home/{{user}}/.local/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/stylesheet.css"
+  git_link: https://github.com/home-sweet-gnome/dash-to-panel.git

@@ -1,6 +1,15 @@
 ---
 - pip:
-    name: {{item}}
+    name: "{{item}}"
+  with_items:
+    - requests
+    - boto3
+    - xlsxwriter
+    - flask
+
+- pip:
+    name: "{{item}}"
+    executable: pip3
   with_items:
     - requests
     - boto3

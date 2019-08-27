@@ -1,18 +1,31 @@
 ---
+- name: Add Numix icons
+  apt_repository:
+    repo: ppa:papirus/papirus
+
+- name: Update cache
+  apt:
+    update_cache: yes
+
 - name: Install apt packages
   apt: name={{item}}
   with_items:
     - htop
-    # - gdebi
+    - gdebi
     - tree
-    # - ubuntu-wallpapers*
-    # - mint-backgrounds-*
     # - shutter
     - jq
-    - python-pip
-    - python3-pip
     - chromium-browser
     - deepin-terminal    
+    - gnome-tweaks
+    - chrome-gnome-shell
+    - gnome-shell-extensions
+    - gettext
+    - libgettextpo-dev
+    - gnome-tweak-tool
+    - gnome-menus
+    - gir1.2-gmenu-3.0
+    - papirus-icon-theme # Icons
 
 - name: Install deb packages
   apt: deb={{item}}

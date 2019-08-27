@@ -9,3 +9,4 @@
     - remmina
     - remmina-plugin-rdp
     - libfreerdp-plugins-standard
+  ignore_errors: yes # Remina comes with 19.04 and libfreerdp-plugins-standard isn't available
