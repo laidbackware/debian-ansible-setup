@@ -1,0 +1,6 @@
+---
+- name: Load Gnome Tweaks 
+  shell: dconf load / < tasks/desktop/saved_settings.dconf
+
+- name: Restart Gnome
+  shell: dbus-send --type=method_call --print-reply --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'global.reexec_self()'

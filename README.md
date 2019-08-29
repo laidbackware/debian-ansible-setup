@@ -18,5 +18,8 @@ sudo apt-get install ansible
 
 3. Install Playbook
 ```
-sudo ansible-pull -U https://github.com/ob1-sc/mint-blade-laptop-setup.git
+sudo ansible-pull -U https://github.com/laidbackware/ubuntu-ansible-setup.git
 ```
+
+# TODO
+- Refactor gnome extensions, as currently installing from latest commit on master.
