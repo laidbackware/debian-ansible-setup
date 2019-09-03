@@ -16,7 +16,9 @@
     - include: tasks/desktop/gnome-extensions/gnome-extensions.yml
       with_items:
       - "{{gnome_extensions}}"
-      
+    - include: tasks/desktop/install-theme.yml
+    - include: tasks/desktop/gnome-tweaks.yml
+
     - include: tasks/dev/node/install.yml
     - include: tasks/dev/python/install-pip.yml
     - include: tasks/dev/python/pip-modules.yml
@@ -26,7 +28,7 @@
     - include: tasks/apps/remmina/install.yml ## Comes with 19.04 onwards
     - include: tasks/apps/virtualbox/install.yml
 
-    - include: tasks/pcfs/install-bosh-cli-depandancies.yml
+    - include: tasks/pcfs/install-bosh-cli-dependencies.yml
     - include: tasks/pcfs/install-github-release.yml
       with_items:
       - "{{cf_github_releases}}"

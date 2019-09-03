@@ -1,6 +1,7 @@
 ---
 user: matt
 ubuntu_codename: disco
+
 cf_github_releases:
 - repository: cloudfoundry/bosh-cli
   install_location: /usr/local/bin/om
@@ -16,6 +17,7 @@ terraform_cli:
   install_location: /usr/local/bin
 packer_cli:
   install_location: /usr/local/bin
+
 gnome_extensions:
 - name: arc-menu
   settings_location: "/home/{{user}}/.local/share/gnome-shell/extensions/arc-menu@linxgem33.com/stylesheet.css"

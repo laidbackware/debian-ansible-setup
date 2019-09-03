@@ -1,0 +1,137 @@
+[com/system76/hidpi]
+mode='hidpi'
+enable=true
+
+[io/elementary/appcenter/settings]
+window-x=317
+reset-paid-apps=false
+paid-apps=@as []
+window-y=5
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+show-size-column=true
+show-hidden=false
+sidebar-width=148
+sort-column='name'
+window-position=(362, 28)
+sort-order='ascending'
+location-mode='path-bar'
+sort-directories-first=false
+window-size=(1096, 822)
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 0.97999999999999998)]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+
+[org/gnome/desktop/app-folders/folders/Pop-System]
+translate=true
+name='System.directory'
+apps=['gnome-language-selector.desktop', 'gnome-session-properties.desktop', 'gnome-system-monitor.desktop', 'im-config.desktop', 'nm-connection-editor.desktop', 'nvidia-settings.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.PowerStats.desktop', 'org.gnome.seahorse.Application.desktop', 'software-properties-gnome.desktop', 'system76-driver.desktop', 'system76-firmware.desktop']
+
+[org/gnome/desktop/app-folders/folders/Pop-Utility]
+translate=true
+name='X-GNOME-Utilities.directory'
+apps=['com.github.donadigo.eddy.desktop', 'com.system76.Popsicle.desktop', 'eog.desktop', 'gucharmap.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Totem.desktop', 'simple-scan.desktop', 'yelp.desktop']
+
+[org/gnome/desktop/app-folders/folders/Pop-Office]
+translate=true
+name='Office.directory'
+apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
+
+[org/gnome/desktop/interface]
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Canta-dark'
+icon-theme='Papirus'
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+sources=[('xkb', 'gb')]
+xkb-options=@as []
+
+[org/gnome/desktop/notifications]
+application-children=['io-elementary-appcenter', 'firefox', 'org-gnome-chromegnomeshell']
+
+[org/gnome/desktop/notifications/application/io-elementary-appcenter]
+application-id='io.elementary.appcenter.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
+application-id='org.gnome.ChromeGnomeShell.desktop'
+
+[org/gnome/desktop/session]
+idle-delay=uint32 600
+
+[org/gnome/desktop/wm/keybindings]
+panel-main-menu=['Super_L']
+
+[org/gnome/desktop/privacy]
+report-technical-problems=true
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/mutter]
+overlay-key=''
+
+[org/gnome/settings-daemon/peripherals/keyboard]
+numlock-state='on'
+
+[org/gnome/settings-daemon/plugins/xsettings]
+antialiasing='grayscale'
+hinting='slight'
+
+[org/gnome/control-center]
+last-panel='power'
+
+[org/gnome/system/location]
+enabled=false
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+maximized=false
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/shell]
+command-history=['r']
+enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'batteryiconfix@kylecorry31.github.io', 'desktop-icons@csoriano', 'donotdisturb@kylecorry31.github.io', 'pop-shop-details@system76.com', 'pop-suspend-button@system76.com', 'system76-power@system76.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'arc-menu@linxgem33.com']
+
+[org/gnome/shell/extensions/arc-menu]
+menu-color='rgb(0,0,0)'
+menu-height=550
+separator-color='rgb(63,62,64)'
+menu-arrow-size=0
+menu-width=290
+menu-margin=0
+menu-foreground-color='rgba(211, 218, 227, 1)'
+border-color='rgb(63,62,64)'
+menu-hotkey='Super_L'
+disable-activities-hotcorner=false
+menu-corner-radius=10
+reload-theme=false
+multi-monitor=true
+custom-menu-button-icon-size=40.0
+menu-font-size=11
+enable-custom-arc-menu=true
+menu-button-text='Custom_Text'
+highlight-color='rgba(238, 238, 236, 0.1)'
+menu-button-icon='Arc_Menu_Icon'
+menu-border-size=4
+vert-separator=true
+pinned-app-list=['Chromium Web Browser', 'chromium-browser', 'chromium-browser.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Arc Menu Settings', 'emblem-system-symbolic', 'gnome-shell-extension-prefs arc-menu@linxgem33.com']
+
+[org/gnome/shell/extensions/dash-to-panel]
+show-appmenu=false
+trans-use-custom-bg=true
+show-favorites=true
+show-show-apps-button=false
+show-activities-button=false
+hotkeys-overlay-combo='TEMPORARILY'
+trans-bg-color='#000000'
+show-showdesktop-button=true
