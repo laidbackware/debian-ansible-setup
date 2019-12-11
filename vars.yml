@@ -4,9 +4,9 @@ ubuntu_codename: disco
 
 cf_github_releases:
 - repository: cloudfoundry/bosh-cli
-  install_location: /usr/local/bin/om
-- repository: pivotal-cf/om
   install_location: /usr/local/bin/bosh
+- repository: pivotal-cf/om
+  install_location: /usr/local/bin/om
 - repository: pivotal-cf/pivnet-cli
   install_location: /usr/local/bin/pivnet
 - repository: cloudfoundry/bosh-bootloader
@@ -25,3 +25,13 @@ gnome_extensions:
 - name: dash-to-panel
   settings_location: "/home/{{user}}/.local/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/stylesheet.css"
   git_link: https://github.com/home-sweet-gnome/dash-to-panel.git
+
+
+gnome_extensions:
+# - name: arc-menu
+#   settings_location: "/home/{{user}}/.local/share/gnome-shell/extensions/arc-menu@linxgem33.com/stylesheet.css"
+#   git_link: https://gitlab.com/LinxGem33/Arc-Menu.git
+   
+- name: dash-to-panel
+  settings_location: "/home/{{user}}/.local/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/stylesheet.css"
+  repository0pk: home-sweet-gnome/dash-to-panel
