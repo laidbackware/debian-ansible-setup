@@ -44,7 +44,14 @@
     - tilix # terminal, !! experimenting
     - qdirstat # treesize
     - xarchiver # zip/7zip
+    - v4l-utils # Webcam util
+    - golang-go
+    - default-jre
+
     # https://gnunn1.github.io/tilix-web/manual/vteconfig/ if any good
+
+    # Customizations
+#Added flameshot keyboard shortcut
 
 - name: Install deb packages
   apt: deb={{item}}
