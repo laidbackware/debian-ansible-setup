@@ -6,6 +6,7 @@
     - ppa:papirus/papirus
     - ppa:chromium-team/stable
     - ppa:agornostal/ulauncher
+    - ppa:solaar-unifying/stable
 
 
 - name: Update cache
@@ -33,7 +34,7 @@
     - gir1.2-gmenu-3.0
     - papirus-icon-theme # Icons
     - lastpass-cli
-    - fuseiso
+    # - fuseiso
     - direnv
     - vlc
     - gthumb
@@ -47,6 +48,7 @@
     - v4l-utils # Webcam util
     - golang-go
     - default-jre
+    - solaar
 
     # https://gnunn1.github.io/tilix-web/manual/vteconfig/ if any good
 
