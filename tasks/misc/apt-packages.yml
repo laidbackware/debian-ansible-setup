@@ -7,6 +7,7 @@
     - ppa:chromium-team/stable
     - ppa:agornostal/ulauncher
     - ppa:solaar-unifying/stable
+    - multiverse
 
 
 - name: Update cache
@@ -49,6 +50,7 @@
     - golang-go
     - default-jre
     - solaar
+    - steam
 
     # https://gnunn1.github.io/tilix-web/manual/vteconfig/ if any good
 
