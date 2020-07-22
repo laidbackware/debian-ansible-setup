@@ -1,5 +1,4 @@
 - name: Install pip
-  apt: name={{item}}
+  apt: name="{{item}}"
   with_items:
-    - python-pip
     - python3-pip

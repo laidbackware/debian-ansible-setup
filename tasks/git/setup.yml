@@ -2,4 +2,4 @@
   become_user: "{{user}}"
   copy:
     src: tasks/git/.gitconfig
-    dest: /home/{{user}}/
+    dest: "/home/{{user}}/"

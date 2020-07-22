@@ -22,6 +22,7 @@
     - include: tasks/dev/node/install.yml
     - include: tasks/dev/python/install-pip.yml
     - include: tasks/dev/python/pip-modules.yml
+    - include: tasks/apps/docker/install.yml
     - include: tasks/apps/vscode/install.yml
     - include: tasks/apps/vim/install.yml
     - include: tasks/apps/tmux/install.yml
@@ -33,9 +34,8 @@
       with_items:
       - "{{cf_github_releases}}"
 
-    - include: tasks/pcfs/install-cf-cli.yml
+    # - include: tasks/pcfs/install-cf-cli.yml
     - include: tasks/pcfs/install-terraform-cli.yml
-    - include: tasks/pcfs/install-packer-cli.yml
     - include: tasks/pcfs/install-aws-cli.yml
 
 # TBC

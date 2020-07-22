@@ -8,20 +8,20 @@
   become_user: "{{user}}"
   git:
     repo: "{{item.git_link}}"
-    dest: /tmp/{{item.name}}
+    dest: "/tmp/{{item.name}}"
     update: yes
 
 - name: Run 'uninstall' target
   become_user: "{{user}}"
   make:
-    chdir: /tmp/{{item.name}}
+    chdir: "/tmp/{{item.name}}"
     target: uninstall
   ignore_errors: yes
 
 - name: Run 'install' target
   become_user: "{{user}}"
   make:
-    chdir: /tmp/{{item.name}}
+    chdir: "/tmp/{{item.name}}"
     target: install
 
 - name: Copy settings over

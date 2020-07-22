@@ -4,7 +4,7 @@
 #   file:
 #     path: /home/siobrien/test/
 #     state: directory
-
+---
 - name: Get latest release of testuseer/testrepo
   github_release:
     repo: pivotal-cf/om

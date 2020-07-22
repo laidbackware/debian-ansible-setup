@@ -1,13 +1,13 @@
 ---
 - name: Add Numix icons
   apt_repository:
-    repo: {{item}}
+    repo: "{{item}}"
   with_items:
     - ppa:papirus/papirus
-    - ppa:chromium-team/stable
+    # - ppa:chromium-team/stable
     - ppa:agornostal/ulauncher
     - ppa:solaar-unifying/stable
-    - multiverse
+    # - multiverse
 
 
 - name: Update cache
@@ -15,7 +15,7 @@
     update_cache: yes
 
 - name: Install apt packages
-  apt: name={{item}}
+  apt: name="{{item}}"
   with_items:
     - htop
     - gdebi
@@ -35,7 +35,6 @@
     - gir1.2-gmenu-3.0
     - papirus-icon-theme # Icons
     - lastpass-cli
-    # - fuseiso
     - direnv
     - vlc
     - gthumb
@@ -51,6 +50,14 @@
     - default-jre
     - solaar
     - steam
+    - remmina
+    - ulauncher
+    - snapd
+    - golang-docker-credential-helpers
+    - docker-compose
+    - screenfetch
+    - ssh
+    - pssh
 
     # https://gnunn1.github.io/tilix-web/manual/vteconfig/ if any good
 
@@ -58,12 +65,11 @@
 #Added flameshot keyboard shortcut
 
 - name: Install deb packages
-  apt: deb={{item}}
+  apt: deb="{{item}}"
   with_items:
     # - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     - https://zoom.us/client/latest/zoom_amd64.deb
-    # hyper
-    # nomachine
+    - https://releases.hyper.is/download/deb
     # xmind
 
 
