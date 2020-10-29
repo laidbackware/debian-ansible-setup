@@ -27,8 +27,8 @@ packer_cli:
 
 gnome_extensions:
 - name: arc-menu
-  settings_location: "/home/{{user}}/.local/share/gnome-shell/extensions/arc-menu@linxgem33.com/stylesheet.css"
-  git_link: https://gitlab.com/LinxGem33/Arc-Menu.git 
+  settings_location: "/home/{{user}}/.local/share/gnome-shell/extensions/arcmenu@arcmenu.com/stylesheet.css"
+  git_link: git@gitlab.com:arcmenu/ArcMenu.git 
 - name: dash-to-panel
   settings_location: "/home/{{user}}/.local/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/stylesheet.css"
   git_link: https://github.com/home-sweet-gnome/dash-to-panel.git

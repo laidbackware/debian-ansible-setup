@@ -1,0 +1,22 @@
+[/]
+arc-menu-icon=51
+border-color='rgb(63,62,64)'
+button-icon-padding=0
+custom-menu-button-icon-size=43.0
+distro-icon=3
+dtp-dtd-state=[true, false]
+enable-custom-arc-menu=true
+highlight-color='rgba(238, 238, 236, 0.1)'
+highlight-foreground-color='rgba(255,255,255,1)'
+menu-arrow-size=0
+menu-border-size=0
+menu-button-icon='Arc_Menu_Icon'
+menu-color='rgba(28, 28, 28, 0.98)'
+menu-corner-radius=10
+menu-font-size=9
+menu-foreground-color='rgba(211, 218, 227, 1)'
+menu-hotkey='Super_L'
+menu-margin=0
+pinned-app-list=['Chromium Web Browser', '', 'chromium.desktop', 'Terminal', '', 'org.gnome.Terminal.desktop', 'ArcMenu Settings', 'ArcMenu_ArcMenuIcon', 'gnome-extensions prefs arcmenu@arcmenu.com']
+separator-color='rgb(63,62,64)'
+vert-separator=true
