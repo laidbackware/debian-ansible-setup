@@ -1,0 +1,36 @@
+---
+- name: Update cache
+  apt:
+    update_cache: yes
+
+- name: Install apt packages
+  apt: name="{{item}}"
+  with_items:
+    # - htop
+    # - gdebi
+    - tree
+    - jq
+    # - firefox
+    - lastpass-cli
+    - direnv
+    - pssh
+    - docker-compose
+    - golang-docker-credential-helpers
+    - remmina
+    - golang-go
+
+- name: Install deb packages
+  apt: deb="{{item}}"
+  with_items:
+    - https://releases.hyper.is/download/deb
+    # nomachine
+    # xmind
+
+
+- name: Remove useless packages from the cache
+  apt:
+    autoclean: yes
+
+- name: Remove dependencies that are no longer required
+  apt:
+    autoremove: yes

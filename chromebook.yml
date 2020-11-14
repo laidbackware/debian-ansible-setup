@@ -11,31 +11,23 @@
 
   tasks:
 
-    - include: tasks/git/setup.yml
-    - include: tasks/misc/apt-packages.yml
-    - include: tasks/desktop/gnome-extensions/gnome-extensions.yml
-      with_items:
-      - "{{gnome_extensions}}"
-    - include: tasks/desktop/install-theme.yml
-    - include: tasks/desktop/gnome-tweaks.yml
-
-    - include: tasks/dev/node/install.yml
-    - include: tasks/dev/python/install-pip.yml
+    # - include: tasks/git/setup.yml
+    - include: tasks/misc/apt-packages-chromebook.yml
+    # - include: tasks/dev/node/install.yml
+    - include: tasks/dev/golang/install.yml
     - include: tasks/dev/python/pip-modules.yml
     - include: tasks/apps/docker/install.yml
     - include: tasks/apps/vscode/install.yml
-    - include: tasks/apps/vim/install.yml
     - include: tasks/apps/tmux/install.yml
-    - include: tasks/apps/remmina/install.yml ## Comes with 19.04 onwards
-    - include: tasks/apps/virtualbox/install.yml
 
     # - include: tasks/pcfs/install-bosh-cli-dependencies.yml
     - include: tasks/pcfs/install-github-release.yml
       with_items:
       - "{{cf_github_releases}}"
 
-    # - include: tasks/pcfs/install-cf-cli.yml
+    - include: tasks/pcfs/install-cf-cli.yml
     - include: tasks/pcfs/install-terraform-cli.yml
+    - include: tasks/pcfs/install-packer-cli.yml
     - include: tasks/pcfs/install-aws-cli.yml
 
 # TBC
