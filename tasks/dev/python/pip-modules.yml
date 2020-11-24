@@ -16,4 +16,6 @@
     - xlsxwriter
     - flask
     - pylint
+    - pyvmomi
+    - git+https://github.com/vmware/vsphere-automation-sdk-python.git
     # - parallel-ssh

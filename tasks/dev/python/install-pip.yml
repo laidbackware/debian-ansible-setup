@@ -2,3 +2,4 @@
   apt: name="{{item}}"
   with_items:
     - python3-pip
+    - python-is-python3

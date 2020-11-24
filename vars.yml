@@ -15,15 +15,15 @@ cf_github_releases:
   install_location: /usr/local/bin/credhub
 - repository: cloudfoundry-incubator/uaa-cli
   install_location: /usr/local/bin/uaa
-- repository: vmware/govmomi
-  install_location: /usr/local/bin/govc
+  #- repository: vmware/govmomi
+  #install_location: /usr/local/bin/govc
 
 cf_cli:
   install_location: /usr/local/bin
-terraform_cli:
-  install_location: /usr/local/bin
-packer_cli:
-  install_location: /usr/local/bin
+  #terraform_cli:
+  ##install_location: /usr/local/bin
+  #packer_cli:
+  #install_location: /usr/local/bin
 
 gnome_extensions:
 - name: arc-menu

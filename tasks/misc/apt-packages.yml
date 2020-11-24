@@ -58,6 +58,8 @@
     - screenfetch
     - ssh
     - pssh
+    - nautilus
+    - bashtop
 
     # https://gnunn1.github.io/tilix-web/manual/vteconfig/ if any good
 
